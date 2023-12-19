@@ -72,7 +72,7 @@ li {
 	border-right: 1px solid var(--grey);
 }
 .accordion_indicator li {
-    display: flex;
+  display: flex;
 	align-items: center;
 	grid-gap: 1rem;
 	padding: 10px 2rem;
@@ -91,16 +91,27 @@ li {
 	border-right-color: var(--blue);
 	color: #fff;
 	background-color: var(--blue);
+  transition: all 0.3s ease-in-out;
 }
 .content {
 	padding: 1.5rem 2rem;
 }
+
 .content li {
-	display: none;
+  display: block;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 1s, height 1s;
 }
+
 .content li.active {
-	display: block;
+  opacity: 1;
+  height: auto;
+  transition: opacity 1s, height 1s;
 }
+
+
 .content li h2 {
 	font-size: 2rem;
 	font-weight: 600;
@@ -129,7 +140,7 @@ li {
 	color: var(--blue);
 }
 .div_inner{
-    display: flex;
+  display: flex;
 }
 .content_right_side{
     width: 50%;
