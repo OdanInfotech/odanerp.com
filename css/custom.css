@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+:root {
+	--white: #FFF;
+	--blue: #7a7a7a;
+	--light: #F5F5F5;
+	--light-blue: #F3F0FF;
+	--grey: #eee;
+	--black: #222;
+}
+
+
+
+.whatsapp-icon{
+    z-index: 99999;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+}
+.whatsapp-icon a{
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+  }
+.nav-link:focus {
+  text-decoration: none;
+}
+.nav-link.disabled {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: default;
+}
+
+
+/* FOR VERTICAL TAB VIEW */
+
+
+
+li {
+	list-style: none;
+}
+
+
+.outer {
+	display: flex;
+	justify-content: center;
+	padding: 1rem;
+}
+
+.accordion_container {
+	
+	width: 90%;
+	background: var(--white);
+	border-radius: 10px;
+}
+.accordion_wrapper {
+	display: flex;
+}
+.accordion_indicator {
+	padding: 1.5rem 0;
+	border-right: 1px solid var(--grey);
+}
+.accordion_indicator li {
+    display: flex;
+	align-items: center;
+	grid-gap: 1rem;
+	padding: 10px 2rem;
+	cursor: pointer;
+	font-size: 1.5rem;
+	color: var(--black);
+	border-right: 3px solid transparent;
+}
+.accordion_indicator li i {
+	font-size: 1.5rem;
+}
+.accordion_indicator li:hover {
+	background: var(--light-blue);
+}
+.accordion_indicator li.active {
+	border-right-color: var(--blue);
+	color: #fff;
+	background-color: var(--blue);
+}
+.content {
+	padding: 1.5rem 2rem;
+}
+.content li {
+	display: none;
+}
+.content li.active {
+	display: block;
+}
+.content li h2 {
+	font-size: 2rem;
+	font-weight: 600;
+	color: var(--black);
+	margin-bottom: .75rem;
+}
+.content li p {
+	margin-bottom: 1rem;
+	color: var(--dark-grey);
+	font-size: 1.3rem;
+}
+
+.button_demo{
+  margin: 20px 0;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--blue);
+  font-size: 20px;
+  padding: 15px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid var(--blue);
+}
+.button_demo:hover{
+	background-color: #fff;
+	color: var(--blue);
+}
+.div_inner{
+    display: flex;
+}
+.content_right_side{
+    width: 50%;
+}
+.content_left_side{
+    width: 50%;
+}
+
+.content_left_side img{
+	width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+	.accordion_wrapper {
+		flex-direction: column;
+	}
+	.accordion_indicator {
+		border-right: none;
+	}
+}
