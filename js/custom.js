@@ -10,7 +10,7 @@ const requestDemo = () => {
 if (isRequested === false) {
     setTimeout(() => {
         console.log('functon call set time out')
-        $('#exampleModalCenter').modal('    ');
-    }, 3000);
+        $('#exampleModalCenter').modal('show');
+    }, 60000);
     isRequested = true;
 }
