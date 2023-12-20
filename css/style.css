@@ -76,6 +76,8 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
+  scroll-behavior: smooth;
+  
 }
 
 [tabindex="-1"]:focus {
@@ -11440,8 +11442,6 @@ h5,
 }
 .services:hover  {
   background-color: #fff;
-  /* border: 1px solid lightgray; */
-  /* box-shadow: lightgrey 0px 2px 8px 0px; */
   box-shadow: lightgray 0px 3px 8px;
 } 
 .services:hover  .media-body{
@@ -11452,6 +11452,13 @@ h5,
 }
 .services:hover .icon span{
   color: #000 !important;
+}
+.services:hover .svg_custom_icons rect {
+  fill: none;  /* BACKGROUND COLOR OF ICON */
+}
+
+.services:hover .svg_custom_icons path {
+  fill: #000; /* COLOR OF ICON */
 }
 
 .services:hover:before,

@@ -50,11 +50,6 @@
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 			<div class="container">
 				<a class="navbar-brand" href="index.html">
-					<!-- IT<span>solution</span> -->
-					<!-- ONLY ICON -->
-					<!-- <img src="images/odan_icon_without_bg.png" style="height: 50px;" /> -->
-	
-					<!-- FULL LOGO -->
 					<img src="images/odan_full_logo.png" style="height: 50px;" />
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,16 +58,39 @@
 	
 				<div class="collapse navbar-collapse" id="ftco-nav">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-						<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-						<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-						<li class="nav-item"><a href="cases.html" class="nav-link">Case Study</a></li>
-						<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-						<li class="nav-item"><a href="contact.html" class="nav-link">Contact us</a></li>
+						<li class="nav-item active">
+							<a href="" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">About</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Services</a>
+						</li>
+						<li class="nav-item">
+							<a href="#feature_section" class="nav-link">Features</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Case Study</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Contact us</a>
+						</li>
 						<li class="nav-item cta">
-							<a href="https://docs.google.com/forms/d/e/1FAIpQLSeZHdD8Ky1t9WWGHOcNfaVlpOU0P9M4Pqi8nS4GrX-YjkmiKw/viewform" target="_blank" class="nav-link">
+							<!-- <a 
+								href="https://docs.google.com/forms/d/e/1FAIpQLSeZHdD8Ky1t9WWGHOcNfaVlpOU0P9M4Pqi8nS4GrX-YjkmiKw/viewform" 
+								target="_blank" 
+								class="nav-link" 
+								data-toggle="modal" 
+								data-target="#exampleModalCenter" >
 								Request Demo
-							</a>
+							</a> -->
+							<button type="button" class="btn btn-primary nav-link" data-toggle="modal" data-target="#exampleModalCenter">
+								Request Demo
+							</button>
 						</li>
 					</ul>
 				</div>
@@ -81,6 +99,28 @@
 	</header>
 	<!-- END nav -->
 
+	<!-- MODAL START -->
+
+	
+	  <div class="modal fade" id="exampleModalCenter"  tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-xl modal-dialog-centered" role="document" style="width: 80%;">
+		  <div class="modal-content">
+			<div class="modal-heade">
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body w-100">
+			  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeZHdD8Ky1t9WWGHOcNfaVlpOU0P9M4Pqi8nS4GrX-YjkmiKw/viewform" frameborder="0" style="width: 100%; height: 70vh;"></iframe>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+	<!-- MODAL END -->
 
 	
 	<main>
@@ -98,9 +138,9 @@
 						</div>
 						<h2 style="color: #fff;font-weight: bold;" class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Blueprints to Breakthroughs Revolutionizing Construction Management for a Seamless Future.</h2>
 						<p>
-							<a href="https://docs.google.com/forms/d/e/1FAIpQLSeZHdD8Ky1t9WWGHOcNfaVlpOU0P9M4Pqi8nS4GrX-YjkmiKw/viewform" class="btn btn-primary px-4 py-3">
+							<button type="button" class="btn btn-primary nav-link" data-toggle="modal" data-target="#exampleModalCenter">
 								Request Demo
-							</a>
+							</button>
 						</p>
 					</div>
 				</div>
@@ -192,9 +232,16 @@
 				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
 					<div class="media block-6 services d-block m-2" style="width: 100%;">
 						<div class="line"></div>
-						<div class="icon">
-							<span class="flaticon-web-programming"></span>
-						</div>
+						
+							<svg width="70" height="70" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="svg_custom_icons">
+								<rect width="70" height="70" fill="none" />
+								<path d="M577.35 588.744C577.35 645.005 532.53 694.684 512.156 714.431C491.627 694.684 446.649 645.005 446.649 588.744C446.466 553.277 453.839 518.178 468.276 485.781H555.724C570.16 518.178 577.533 553.277 577.35 588.744Z" fill="white"/>
+								<path d="M730.149 344.546V510.352L648.499 453.15V292.359L722.156 331.068C724.605 332.355 726.648 334.297 728.059 336.676C729.47 339.056 730.194 341.78 730.149 344.546Z" fill="white"/>
+								<path d="M558.231 101.256L519.992 63.1738C517.861 61.1368 515.026 60 512.078 60C509.13 60 506.295 61.1368 504.164 63.1738L465.925 101.256C447.203 119.916 432.358 142.096 422.245 166.518C412.132 190.94 406.95 217.121 407 243.554V454.338H496.328V379.114H527.671V454.338H617.156V243.554C617.205 217.121 612.024 190.94 601.911 166.518C591.798 142.096 576.953 119.916 558.231 101.256ZM512 320.502C499.446 320.502 487.175 316.78 476.737 309.805C466.3 302.831 458.165 292.919 453.361 281.321C448.557 269.723 447.3 256.962 449.749 244.65C452.198 232.338 458.243 221.028 467.119 212.152C475.996 203.275 487.305 197.23 499.617 194.781C511.929 192.332 524.691 193.589 536.289 198.393C547.886 203.197 557.799 211.332 564.773 221.77C571.747 232.207 575.47 244.479 575.47 257.032C575.434 273.854 568.735 289.977 556.84 301.872C544.945 313.767 528.822 320.466 512 320.502Z" fill="white"/>
+								<path d="M375.656 292.359V453.15L293.85 510.352V344.546C293.836 341.767 294.59 339.038 296.027 336.66C297.465 334.282 299.532 332.347 302 331.068L375.656 292.359Z" fill="white"/>
+								<path d="M544.127 257.221C544.127 263.575 542.243 269.786 538.712 275.069C535.182 280.353 530.165 284.47 524.294 286.902C518.424 289.334 511.964 289.97 505.732 288.73C499.5 287.491 493.776 284.431 489.283 279.938C484.79 275.445 481.73 269.72 480.49 263.488C479.251 257.256 479.887 250.797 482.319 244.926C484.75 239.056 488.868 234.038 494.151 230.508C499.435 226.978 505.646 225.094 512 225.094C520.517 225.105 528.682 228.494 534.704 234.516C540.727 240.539 544.115 248.704 544.127 257.221Z" fill="white"/>
+								<path d="M902.381 629.249L898.463 641.316L948.612 670.309L884.358 781.578L836.56 754.152L828.254 764.182C815.42 779.587 801.488 794.042 786.567 807.436L777.321 815.899L806 865.891L694.731 930.302L667.306 882.66L654.925 887.205C636.093 894.183 616.762 899.736 597.097 903.817L584.716 906.481V964.152H456.209V909.145L443.202 906.951C423.475 903.665 404.036 898.844 385.06 892.533L372.836 888.615L344 938.764L232.731 874.511L260.157 826.712L249.97 818.249C234.602 805.431 220.149 791.554 206.716 776.72L198.254 767.317L148.261 796.152L84.0075 684.884L131.493 657.458L126.948 645.078C120.154 626.185 114.605 606.867 110.336 587.249L107.672 574.869H50V500.898H161.582V502.152C161.582 595.089 198.501 684.219 264.217 749.935C329.933 815.651 419.063 852.57 512 852.57C604.937 852.57 694.067 815.651 759.783 749.935C825.499 684.219 862.418 595.089 862.418 502.152V500.898H974V557.943H918.993L916.799 571.107C913.475 590.826 908.655 610.263 902.381 629.249Z" fill="white"/>
+							</svg>
 						<div class="media-body">
 							<h3 class="heading mb-3"></h3>
 							<p>
@@ -290,7 +337,7 @@
 			</div>
 		</section>
 
-		<section class="feature_section mt-5" >
+		<section class="feature_section mt-5" id="feature_section" >
 			<div class="row justify-content-center pb-5">
 				<div class="col-md-6 heading-section text-center ftco-animate">
 					<h2 class="mb-4"> 
@@ -304,6 +351,7 @@
 						<div class="col-lg-6">
 							<div id="accordion" class="myaccordion w-100" aria-multiselectable="true">
 
+								<!-- ONE -->
 								<div class="card">
 									<div class="card-header p-0" id="headingOne">
 										<h2 class="mb-0">
@@ -327,10 +375,11 @@
 									</div>
 								</div>
 
+								<!-- TWO -->
 								<div class="card">
-									<div class="card-header p-0" id="headingOne">
+									<div class="card-header p-0" id="headingTwo">
 										<h2 class="mb-0">
-											<button href="#collapseOne" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
+											<button href="#collapseTwo" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseTwo">
 												<p class="mb-0">
 													Live Progress Project Updates
 												</p>
@@ -338,7 +387,7 @@
 											</button>
 										</h2>
 									</div>
-									<div class="collapse show" id="collapseOne" role="tabpanel" aria-labelledby="headingOne">
+									<div class="collapse" id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo">
 										<div class="card-body py-3 px-0">
 											<ol>
 												<li>Create a new Job</li>
@@ -350,10 +399,11 @@
 									</div>
 								</div>
 		
+								<!-- THREE -->
 								<div class="card">
-									<div class="card-header p-0" id="headingOne">
+									<div class="card-header p-0" id="headingThree">
 										<h2 class="mb-0">
-											<button href="#collapseOne" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
+											<button href="#collapseThreheadingThree" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseThreheadingThree">
 												<p class="mb-0">
 													Manage Human and material resources
 												</p>
@@ -361,7 +411,7 @@
 											</button>
 										</h2>
 									</div>
-									<div class="collapse show" id="collapseOne" role="tabpanel" aria-labelledby="headingOne">
+									<div class="collapse" id="collapseThreheadingThree" role="tabpanel" aria-labelledby="headingThree">
 										<div class="card-body py-3 px-0">
 											<ol>
 												<li>Resource Allocation</li>
@@ -378,10 +428,11 @@
 									</div>
 								</div>
 								
+								<!-- FOUR -->
 								<div class="card">
-									<div class="card-header p-0" id="headingOne">
+									<div class="card-header p-0" id="headingFour">
 										<h2 class="mb-0">
-											<button href="#collapseOne" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
+											<button href="#collapseFourheadingFour" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseFourheadingFour">
 												<p class="mb-0">
 													Cost Estimation and Budgeting
 												</p>
@@ -389,7 +440,7 @@
 											</button>
 										</h2>
 									</div>
-									<div class="collapse show" id="collapseOne" role="tabpanel" aria-labelledby="headingOne">
+									<div class="collapse" id="collapseFourheadingFour" role="tabpanel" aria-labelledby="headingFour">
 										<div class="card-body py-3 px-0">
 											<ol>
 												<li>Collaborative Budget Approval</li>
@@ -404,10 +455,11 @@
 									</div>
 								</div>
 
+								<!-- FIVE -->
 								<div class="card">
-									<div class="card-header p-0" id="headingOne">
+									<div class="card-header p-0" id="headingFive">
 										<h2 class="mb-0">
-											<button href="#collapseOne" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
+											<button href="#collapseFive" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseFive">
 												<p class="mb-0">
 													Comprehensive Recipe Details
 												</p>
@@ -415,7 +467,7 @@
 											</button>
 										</h2>
 									</div>
-									<div class="collapse show" id="collapseOne" role="tabpanel" aria-labelledby="headingOne">
+									<div class="collapse" id="collapseFive" role="tabpanel" aria-labelledby="headingFive">
 										<div class="card-body py-3 px-0">
 											<ol>
 												<li>Detail RMC ingredient, quantity, and preparation specifics</li>
@@ -427,10 +479,11 @@
 									</div>
 								</div>
 
+								<!-- SIX -->
 								<div class="card">
-									<div class="card-header p-0" id="headingTwo">
+									<div class="card-header p-0" id="headingSix">
 										<h2 class="mb-0">
-											<button href="#collapseTwo" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
+											<button href="#collapseSix" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseSix">
 												<p class="mb-0">
 													Comprehensive product and vendor management
 												</p>
@@ -438,7 +491,7 @@
 											</button>
 										</h2>
 									</div>
-									<div class="collapse show" id="collapseTwo" role="tabpanel" aria-labelledby="collapseTwo">
+									<div class="collapse" id="collapseSix" role="tabpanel" aria-labelledby="collapseSix">
 										<div class="card-body py-3 px-0">
 											<ol>
 												<li>Detailed specifications for ordered products/services</li>
@@ -453,10 +506,11 @@
 									</div>
 								</div>
 
+								<!-- SEVEN -->
 								<div class="card">
-									<div class="card-header p-0" id="headingThree">
+									<div class="card-header p-0" id="headingSeven">
 										<h2 class="mb-0">
-											<button href="#collapseThree" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
+											<button href="#collapseSeven" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="headingSeven">
 												<p class="mb-0">
 													Centralized management of your workforc
 												</p>
@@ -464,7 +518,7 @@
 											</button>
 										</h2>
 									</div>
-									<div class="collapse show" id="collapseThree" role="tabpanel" aria-labelledby="collapseThree">
+									<div class="collapse" id="collapseSeven" role="tabpanel" aria-labelledby="collapseSeven">
 										<div class="card-body py-3 px-0">
 											<ol>
 												<li>Attendance Tracking</li>
@@ -475,10 +529,11 @@
 									</div>
 								</div>
 
+								<!-- EIGHT -->
 								<div class="card">
-									<div class="card-header p-0" id="headingFour">
+									<div class="card-header p-0" id="headingEight">
 										<h2 class="mb-0">
-											<button href="#collapseFour" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseFour">
+											<button href="#collapseEight" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseEight">
 												<p class="mb-0">
 													Labour & Agency Contract
 												</p>
@@ -486,7 +541,7 @@
 											</button>
 										</h2>
 									</div>
-									<div class="collapse show" id="collapseFour" role="tabpanel" aria-labelledby="headingFour">
+									<div class="collapse" id="collapseEight" role="tabpanel" aria-labelledby="headingEight">
 										<div class="card-body py-3 px-0">
 											<ol>
 												<li>Complete database logging all project labor</li>
@@ -499,10 +554,11 @@
 									</div>
 								</div>
 
+								<!-- NINE -->
 								<div class="card">
-									<div class="card-header p-0" id="headingOne">
+									<div class="card-header p-0" id="headingNine">
 										<h2 class="mb-0">
-											<button href="#collapseOne" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
+											<button href="#collapseNine" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseNine">
 												<p class="mb-0">
 													Chart of Accounts
 												</p>
@@ -510,7 +566,7 @@
 											</button>
 										</h2>
 									</div>
-									<div class="collapse show" id="collapseOne" role="tabpanel" aria-labelledby="headingOne">
+									<div class="collapse" id="collapseNine" role="tabpanel" aria-labelledby="headingNine">
 										<div class="card-body py-3 px-0">
 											<ol>
 												<li>Balance Management</li>
@@ -522,10 +578,11 @@
 									</div>
 								</div>
 
+								<!-- TEN -->
 								<div class="card">
-									<div class="card-header p-0" id="headingOne">
+									<div class="card-header p-0" id="headingTen">
 										<h2 class="mb-0">
-											<button href="#collapseOne" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
+											<button href="#collapseTen" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseTen">
 												<p class="mb-0">
 													Employee Wallet
 												</p>
@@ -533,7 +590,7 @@
 											</button>
 										</h2>
 									</div>
-									<div class="collapse show" id="collapseOne" role="tabpanel" aria-labelledby="headingOne">
+									<div class="collapse" id="collapseTen" role="tabpanel" aria-labelledby="headingTen">
 										<div class="card-body py-3 px-0">
 											<ol>
 												<li>Wallet Balance</li>
@@ -553,7 +610,7 @@
 					<div class="outer">
 						<div class="accordion_container">
 							<div class="accordion_wrapper">
-								<ul class="accordion_indicator" style="width: 45rem;">
+								<ul class="accordion_indicator" style="width: 35rem;">
 									<li class="active" data-target="#tab1">
 										Intuitive Dashboard
 									</li>
@@ -592,7 +649,6 @@
 										<div class="div_inner row">
 											<div class="content_right_side col-md-12 col-lg-6">												
 												<h2>Streamlined dashboard design for easy navigation </h2>
-												<p style="font-size: 1.8rem; font-weight: bold; color: #000; margin-top: 1rem;" > Features</p>
 												<ul class="ml-4" >
 													<li class="feture_points">Construction Site Insights</li>
 													<li class="feture_points">Warehouse Workforce Overview</li>
@@ -631,7 +687,6 @@
 												<h2>
 													Live Progress Project Updates
 												</h2>
-												<p style="font-size: 1.8rem; font-weight: bold; color: #000; margin-top: 1rem;" > Features</p>
 												<ul class="ml-4" >
 													<li class="feture_points">Create a new Job</li>
 													<li class="feture_points">Work Type Dashboard</li>
@@ -664,7 +719,6 @@
 												<h2>
 													Manage Human and material resources
 												</h2>
-												<p style="font-size: 1.8rem; font-weight: bold; color: #000; margin-top: 1rem;" > Features</p>
 												<ul class="ml-4" >
 													<li class="feture_points">Resource Allocation</li>
 													<li class="feture_points">Equipment Tracking</li>
@@ -700,7 +754,6 @@
 												<h2>
 													Cost Estimation and Budgeting
 												</h2>
-												<p style="font-size: 1.8rem; font-weight: bold; color: #000; margin-top: 1rem;" > Features</p>
 												<ul class="ml-4" >
 													<li class="feture_points">Collaborative Budget Approval</li>
 													<li class="feture_points">Real-time Cost Tracking</li>
@@ -735,7 +788,6 @@
 												<h2>
 													Comprehensive Recipe Details
 												</h2>
-												<p style="font-size: 1.8rem; font-weight: bold; color: #000; margin-top: 1rem;" > Features</p>
 												<ul class="ml-4" >
 													<li class="feture_points">Detail RMC ingredient, quantity, and preparation specifics</li>
 													<li class="feture_points">Specify precise ingredient quantities for efficient RMC production</li>
@@ -768,7 +820,6 @@
 												<h2>
 													Comprehensive product and vendor management
 												</h2>
-												<p style="font-size: 1.8rem; font-weight: bold; color: #000; margin-top: 1rem;" > Features</p>
 												<ul class="ml-4" >
 													<li class="feture_points">Detailed specifications for ordered products/services</li>
 													<li class="feture_points">Store vital vendor details linked to the purchase order</li>
@@ -803,7 +854,6 @@
 												<h2>
 													Centralized management of your workforce
 												</h2>
-												<p style="font-size: 1.8rem; font-weight: bold; color: #000; margin-top: 1rem;" > Features</p>
 												<ul class="ml-4" >
 													<li class="feture_points">Attendance Tracking</li>
 													<li class="feture_points">Leave Management</li>
@@ -837,7 +887,6 @@
 												<h2>
 													Labour & Agency Contract
 												</h2>
-												<p style="font-size: 1.8rem; font-weight: bold; color: #000; margin-top: 1rem;" > Features</p>
 												<ul class="ml-4" >
 													<li class="feture_points">Complete database logging all project labor</li>
 													<li class="feture_points">Real-time labor attendance tracking across all sites</li>
@@ -870,7 +919,6 @@
 												<h2>
 													Chart of Accounts
 												</h2>
-												<p style="font-size: 1.8rem; font-weight: bold; color: #000; margin-top: 1rem;" > Features</p>
 												<ul class="ml-4" >
 													<li class="feture_points">Balance Management</li>
 													<li class="feture_points">Account Creation</li>
@@ -902,7 +950,6 @@
 												<h2>
 													Employee Wallet
 												</h2>
-												<p style="font-size: 1.8rem; font-weight: bold; color: #000; margin-top: 1rem;" > Features</p>
 												<ul class="ml-4" >
 													<li class="feture_points">Wallet Balance</li>
 													<li class="feture_points">Balance Type</li>
@@ -936,61 +983,9 @@
 			</div>	
 		</section>
 	
-		<section class="ftco-section services-section">
-			<div class="container">
-				<div class="row justify-content-center pb-5">
-					<div class="col-md-6 heading-section text-center
-						<h2 class="mb-4">Our Exclusive <span>IT Solution</span> Services</h2>
-					</div>
-				</div>
-				<div class="row d-flex no-gutters">
-					<div class="col-md-3 d-flex align-self-stretch ftco-animate">
-						<div class="media block-6 services d-block m-2">
-							<div class="line"></div>
-							<div class="icon">
-								<span class="flaticon-web-programming"></span>
-							</div>
-							<div class="media-body">
-								<h3 class="heading mb-3">Web Development</h3>
-								<p>	203 Fake St. Mountain View, San Francisco, California, USA</p>
-							</div>
-						</div>      
-					</div>
-					<div class="col-md-3 d-flex align-self-stretch ftco-animate">
-						<div class="media block-6 services d-block m-2">
-							<div class="line"></div>
-							<div class="icon"><span class="flaticon-stats"></span></div>
-							<div class="media-body">
-								<h3 class="heading mb-3">Database Analysis</h3>
-								<p>A small river named Duden flows by their place and supplies.</p>
-							</div>
-						</div>    
-					</div>
-					<div class="col-md-3 d-flex align-self-stretch ftco-animate">
-						<div class="media block-6 services d-block m-2">
-							<div class="line"></div>
-							<div class="icon"><span class="flaticon-secure"></span></div>
-							<div class="media-body">
-								<h3 class="heading mb-3">Server Security</h3>
-								<p>A small river named Duden flows by their place and supplies.</p>
-							</div>
-						</div>      
-					</div>
-					<div class="col-md-3 d-flex align-self-stretch ftco-animate">
-						<div class="media block-6 services d-block m-2">
-							<div class="line"></div>
-							<div class="icon"><span class="flaticon-presentation"></span></div>
-							<div class="media-body">
-								<h3 class="heading mb-3">UX/UI Strategy</h3>
-								<p>A small river named Duden flows by their place and supplies.</p>
-							</div>
-						</div>      
-					</div>
-				</div>
-			</div>
-		</section>
-	
-		<section class="ftco-section ftco-no-pt">
+
+		<!-- Our Strategic -->
+		<!-- <section class="ftco-section ftco-no-pt">
 			<div class="container">
 				<div class="row justify-content-center pb-5">
 					<div class="col-md-12 heading-section text-center ftco-animate">
@@ -1056,7 +1051,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 	
 		<section class="ftco-section bg-light ftco-faqs">
 			<div class="container">
@@ -1074,17 +1069,19 @@
 						<div class="heading-section mb-5 mt-5 mt-lg-0">
 							<h2 class="mb-3">Frequently Asks Questions</h2>
 						</div>
+
 						<div id="accordion" class="myaccordion w-100" aria-multiselectable="true">
+							<!-- ELEVEN -->
 							<div class="card">
-								<div class="card-header p-0" id="headingOne">
+								<div class="card-header p-0" id="headingEleven">
 									<h2 class="mb-0">
-										<button href="#collapseOne" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
+										<button href="#collapseEleven" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseEleven">
 											<p class="mb-0">How does Construction Management ERP improve project efficiency?</p>
 											<i class="fa" aria-hidden="true"></i>
 										</button>
 									</h2>
 								</div>
-								<div class="collapse show" id="collapseOne" role="tabpanel" aria-labelledby="headingOne">
+								<div class="collapse show" id="collapseEleven" role="tabpanel" aria-labelledby="headingEleven">
 									<div class="card-body py-3 px-0">
 										<ol>
 											<li>Far far away, behind the word mountains</li>
@@ -1097,16 +1094,17 @@
 								</div>
 							</div>
 	
+							<!-- TWELVE-->
 							<div class="card">
-								<div class="card-header p-0" id="headingTwo" role="tab">
+								<div class="card-header p-0" id="headingtTWelve" role="tab">
 									<h2 class="mb-0">
-										<button href="#collapseTwo" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
+										<button href="#collapseTwelve" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwelve">
 											<p class="mb-0">Is the system customizable to fit our specific project needs?</p>
 											<i class="fa" aria-hidden="true"></i>
 										</button>
 									</h2>
 								</div>
-								<div class="collapse" id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo">
+								<div class="collapse" id="collapseTwelve" role="tabpanel" aria-labelledby="headingtTelve">
 									<div class="card-body py-3 px-0">
 										<ol>
 											<li>Far far away, behind the word mountains</li>
@@ -1119,16 +1117,17 @@
 								</div>
 							</div>
 	
+							<!-- THIRTEEN -->
 							<div class="card">
-								<div class="card-header p-0" id="headingThree" role="tab">
+								<div class="card-header p-0" id="headingThirteen" role="tab">
 									<h2 class="mb-0">
-										<button href="#collapseThree" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">
+										<button href="#collapseThirteen" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseThirteen">
 											<p class="mb-0">What support and training options are available?</p>
 											<i class="fa" aria-hidden="true"></i>
 										</button>
 									</h2>
 								</div>
-								<div class="collapse" id="collapseThree" role="tabpanel" aria-labelledby="headingTwo">
+								<div class="collapse" id="collapseThirteen" role="tabpanel" aria-labelledby="headingThirteen">
 									<div class="card-body py-3 px-0">
 										<ol>
 											<li>Far far away, behind the word mountains</li>
@@ -1141,21 +1140,23 @@
 								</div>
 							</div>
 	
+							<!-- FOURTEEN -->
 							<div class="card">
-								<div class="card-header p-0" id="headingFour" role="tab">
+								<div class="card-header p-0" id="headingFourteen" role="tab">
 									<h2 class="mb-0">
-										<button href="#collapseFour" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseFour">
+										<button href="#collapseFourteen" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseFourteen">
 											<p class="mb-0">How can this ERP ensure data security?</p>
 											<i class="fa" aria-hidden="true"></i>
 										</button>
 									</h2>
 								</div>
-								<div class="collapse" id="collapseFour" role="tabpanel" aria-labelledby="headingTwo">
+								<div class="collapse" id="collapseFourteen" role="tabpanel" aria-labelledby="headingFourteen">
 									<div class="card-body py-3 px-0">
 										<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
 									</div>
 								</div>
 							</div>
+
 						</div>
 					</div>
 				</div>
@@ -1362,7 +1363,7 @@
 				<div class="col-md">
 					<div class="ftco-footer-widget mb-4">
 						<!-- <h2 class="ftco-footer-logo">IT<span>solution</span></h2> -->
-						<img src="images/odan_full_logo.png" style="height: 50px; margin-bottom: 30px;" />
+						<img src="images/odan_full_logo_no_bg.png" style="height: 50px; margin-bottom: 30px;" />
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 						<ul class="ftco-footer-social list-unstyled mt-2">							
 							<li class="ftco-animate"><a href="https://www.linkedin.com/company/odaninfotech" target="_blank"><span class="fa fa-linkedin"></span></a></li>
