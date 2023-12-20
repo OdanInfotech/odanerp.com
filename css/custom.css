@@ -120,7 +120,7 @@
 } 
 
 .feture_points{
-  list-style-type: none;
+  list-style-type: circle;
   margin-bottom: 0.7rem;
   font-size: 1.15rem;
 }
