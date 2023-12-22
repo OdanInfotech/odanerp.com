@@ -1,5 +1,6 @@
 :root {
-  --blue: #007bff;
+  --blue: #323EDD;
+  --new-blue-color-ERP: #3650A2; 
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -10871,11 +10872,13 @@ h5,
   background: #ffa41b !important;
 }
 .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-  color: #323edd;
+  /* color: #323edd; */
+  color: var(--new-blue-color-ERP);
 }
 @media (max-width: 991.98px) {
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-    color: #323edd;
+    /* color: #323edd; */
+    color: var(--new-blue-color-ERP);
   }
 }
 .ftco-navbar-light .navbar-toggler {
@@ -11371,7 +11374,12 @@ h5,
 
 .services {
   color: #fff;
-  background-color: #323edd;
+
+  /* OLD COLOR */
+  /* background-color: #323edd; */
+
+  /* NEW COLOR */
+  background-color: #3650A2;
 
   /* LIGHT BLUR COLOR */
   /* background-color: rgba(50, 62, 221, 0.8); */
@@ -11454,20 +11462,20 @@ h5,
   box-shadow: lightgray 0px 3px 8px;
 } 
 .services:hover  .media-body{
-  color: #000 !important;
+  color: #3650A2 !important;
 }
 .services:hover  .media-body h3{
-  color: #000 !important;
+  color: #3650A2 !important;
 }
 .services:hover .icon span{
-  color: #000 !important;
+  color: #3650A2 !important;
 }
 .services:hover .svg_custom_icons rect {
-  fill: none;  /* BACKGROUND COLOR OF ICON */
+  fill: none;  
 }
 
 .services:hover .svg_custom_icons path {
-  fill: #000; /* COLOR OF ICON */
+  fill: #3650A2; 
 }
 
 .services:hover:before,
@@ -11595,7 +11603,11 @@ h5,
 }
 
 .ftco-faqs button[aria-expanded="true"] {
-  background-color: #323edd;
+  /* OLD COLOR */
+  /* background-color: #323edd; */
+
+  /* NEW COLOR */
+  background-color: var(--new-blue-color-ERP);
   color: #fff !important;
 }
 .ftco-faqs button[aria-expanded="true"] .fa {
@@ -11649,7 +11661,8 @@ textarea.form-control {
 }
 
 .bg-primary {
-  background: #323edd !important;
+  /* background: #323edd !important; */
+  background-color: var(--new-blue-color-ERP) !important;
 }
 
 .about-author .desc h3 {
@@ -12004,9 +12017,16 @@ textarea.form-control {
   font-size: 40px;
   font-weight: 700;
 }
+
 .heading-section h2 span {
-  color: #323edd;
+  /* OLD COLOR */
+  /* color: #323edd; */
+
+  /* NEW COLOR */
+  color: var(--new-blue-color-ERP);
+  /* color: #3650A2; */
 }
+
 @media (max-width: 767.98px) {
   .heading-section h2 {
     font-size: 28px;

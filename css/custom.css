@@ -9,6 +9,7 @@
 :root {
 	--white: #FFF;
 	--blue: rgb(50, 62, 221);
+  --new-blue-color-ERP: #3650A2;
 	--light: #F5F5F5;
 	--light-blue: #F3F0FF;
 	--grey: #eee;
@@ -70,7 +71,7 @@
   padding: 15px;
   cursor: pointer;
   font-size: 1rem;
-  color: var(--primary);
+  color: var(--new-blue-color-ERP);
   border-right: 3px solid transparent;
 }
 
@@ -85,7 +86,7 @@
 .accordion_indicator li.active {
   border-right-color: #fff;
   color: #fff;
-  background-color: var(--blue);
+  background-color: var(--new-blue-color-ERP);
 }
 
 .content {
@@ -128,17 +129,17 @@
 .button_demo {
   margin: 20px 0;
   border-radius: 15px;
-  background-color: var(--blue);
+  background-color: var(--new-blue-color-ERP);
   font-size: 20px;
   padding: 15px;
   color: #fff;
-  border: 1px solid var(--blue);
+  background-color: var(--new-blue-color-ERP);
 }
 
 .button_demo:hover {
   background-color: #fff;
   color: var(--blue);
-  border: 1px solid var(--blue);
+  background-color: var(--new-blue-color-ERP);
 }
 
 .div_inner {
