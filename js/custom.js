@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             console.log('function call set timeout');
             $('#exampleModalCenter').modal('show');
-        }, 300000000);
+        }, 60000);
 
         isRequested = true;
     }
