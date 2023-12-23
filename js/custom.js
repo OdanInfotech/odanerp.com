@@ -1,33 +1,40 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const allIndicator = document.querySelectorAll('.accordion_indicator li');
-    const allContent = document.querySelectorAll('.content li');
+const allIndicator = document.querySelectorAll('.accordion_indicator li');
+const allContent = document.querySelectorAll('.content li');
 
-    allIndicator.forEach(item => item.addEventListener('click', () => {
-        const content = document.querySelector(item.dataset.target);
+allIndicator.forEach(item => item.addEventListener('click', () => {
+    const content = document.querySelector(item.dataset.target);
 
-        allIndicator.forEach(i => i.classList.remove('active'));
-        allContent.forEach(i => i.classList.remove('active'));
+    allIndicator.forEach(i => i.classList.remove('active'));
+    allContent.forEach(i => i.classList.remove('active'));
 
-        content.classList.add('active');
-        item.classList.add('active');
-    }));
+    content.classList.add('active');
+    item.classList.add('active');
+}));
 
-    let isRequested = false;
+let isRequested = false;
 
-    const requestDemo = () => {
-        isRequested = true;
-        console.log('Request button clicked');
-    };
+const requestDemo = () => {
+    isRequested = true;
+    console.log('Request button clicked');
+    console.log('modal open -> ',isRequested)
+};
 
-    if (!isRequested) {
-        setTimeout(() => {
-            console.log('function call set timeout');
-            $('#exampleModalCenter').modal('show');
-        }, 60000);
+console.log('modal open -> ',isRequested)
+const closeButton = () => {
+    console.log('modal close button clicked');
+    isRequested = true;
+    $('#exampleModalCenter').modal('hide');
+}
+console.log('modal open -> ',isRequested)
+if (isRequested === false) {
+    console.log('modal open -> ',isRequested)
+    setTimeout(() => {
+        console.log('function call set timeout');
+        $('#exampleModalCenter').modal('show');
+    }, 3000000);
 
-        isRequested = true;
-    }
-});
+    isRequested = true;
+}
 
 
 
@@ -46,14 +53,14 @@ function submitForm() {
     'use strict'
     var forms = document.querySelectorAll('.needs-validation')
     Array.prototype.slice.call(forms)
-      .forEach(function (form) {
-        form.addEventListener('submit', function (event) {
-          if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-          }
-  
-          form.classList.add('was-validated')
-        }, false)
-      })
-  })()
+        .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+})()
