@@ -39,34 +39,25 @@ if (isRequested === false) {
 
 
 // CONTACK FORM JS
-
-// script.js
-
 $(document).ready(function () {
   // Create an object to store the form data
   var formData = {};
 
-  // Function to update formData on "Designation" change
   $("#designation").on("change", function () {
     formData[this.name] = $(this).val();
   });
 
-  // Function to update formData on form submission
   $("#contactForm").submit(function (event) {
     event.preventDefault();
 
-    // Iterate through each form field and add it to the object
     $(this)
       .find("input, select")
-      .not("#designation") // Exclude Designation from the general form submission
+      .not("#designation") 
       .each(function () {
         formData[this.name] = $(this).val();
       });
 
-    // Log the collected data to the console (you can replace this with your desired action)
     console.log(formData);
-
-    // Here, you can send the formData object to your server using AJAX or perform other actions as needed
   });
 });
 
@@ -82,38 +73,6 @@ var swiper = new Swiper('.swiper', {
   },
 });
 
-
-//   counter-1
-// function animateCounter1(element, start, end, duration) {
-//   let startTime;
-
-//   function updateCounter1(timestamp) {
-//     if (!startTime) startTime = timestamp;
-
-//     const elapsed = timestamp - startTime;
-//     const progress = Math.min(elapsed / duration, 1);
-
-//     const value = Math.floor(start + progress * (end - start));
-//     element.textContent = value;
-
-//     if (progress < 1) {
-//       requestAnimationFrame(updateCounter1);
-//     }
-//   }
-
-//   requestAnimationFrame(updateCounter1);
-// }
-
-// // Get the counter element
-// const counterElement = document.getElementById('happyClients');
-
-// // Set your counter details
-// const startValue = 0;
-// const endValue = 232;
-// const duration = 1000; // in milliseconds
-
-// // Start the counter animation
-// animateCounter1(counterElement, startValue, endValue, duration);
 
 document.addEventListener('DOMContentLoaded', function() {
   var counters = document.querySelectorAll('.count');

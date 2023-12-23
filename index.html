@@ -24,8 +24,6 @@
 	<link rel="icon" href="images//odan_icon_without_bg.png">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-
 </head>
 <body>
 	<div class="wrap">
@@ -1281,162 +1279,130 @@
 		</section>
 
 		<!-- CTA section -->
-		<section class="ftco-section bg-light py-5" id="requestDemo_cta_section">
+		<section class="ftco-section bg-light py-4" id="requestDemo_cta_section">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-md-12">
 						<div class="wrapper px-md-4">
-							<div class="row no-gutters">
+							<div class="row no-gutters" >
 								<div class="col-md-7">
-									<div class="contact-wrap w-100 p-md-5 p-4">
-										<h3 class="mb-4">Contact Us</h3>
+									<div class="contact-wrap w-100 px-5 p-4">
+										<h3 class="mb-4">
+											Request a Demo
+										</h3>
 										<form method="POST" id="contactForm" name="contactForm" class="contactForm">
-											<div class="row">
-												<!-- YOUR NAME -->
-												<div class="col-md-6">
-													<div class="form-group">
-														<label class="label" for="yourName">Your Name</label>
-														<input type="text" class="form-control" required name="yourName" id="yourName" placeholder="Your Name">
-														<div class="invalid-feedback">
-															Please enter your name
-														</div>
+											
+											<div class="card py-3" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+												<div class="container">
+													<div class="form-container">
+													  	<form>
+															<div class="form-group">
+																<label style="font-weight: 550; color: #000;"  for="yourName">Your Name</label>
+																<input type="text" class="form-control" required name="yourName" id="yourName">
+																<div class="invalid-feedback">
+																	Please enter your name
+																</div>
+															</div>
+															<div class="form-group">
+																<label style="font-weight: 550; color: #000;"  for="companyName">Company Name</label>
+																<input type="text" class="form-control" required name="companyName" id="companyName">
+																<div class="invalid-feedback">
+																	Please enter Company Name
+																</div>
+															</div>
+															<div class="form-group">
+																<label style="font-weight: 550; color: #000;"  for="phoneNumber">Phone Number</label>
+																<input type="tel" class="form-control" required name="phoneNumber" id="phoneNumber">
+																<div class="invalid-feedback">
+																	Please enter phone number
+																</div>
+															</div>
+															<div class="form-group">
+																<label for="teamSize" style="font-weight: 550; color: #000;"  >Team Size:</label>
+																<select class="form-control" id="teamSize" name="teamSize" required>
+																  <option selected disabled value="">Select Team Size</option>
+																  <option value="1-5">1 - 5</option>
+																  <option value="5-10">5 - 10</option>
+																  <option value="10-25">10 - 25</option>
+																  <option value="25-50">25 - 50</option>
+																  <option value="50+">50+</option>
+																</select>
+																<div class="invalid-feedback">
+																  Please select Team Size.
+																</div>
+															</div>
+															<div class="form-group">
+																<label for="yourDesignation"  style="font-weight: 550; color: #000;" >Your Designation:</label>
+																<select class="form-control" id="yourDesignation" name="yourDesignation" required>
+																	<option selected disabled value="">Select Designation</option>
+																	<option value="Founder/Proprietor">Founder / Proprietor</option>
+																	<option value="project_manager">Project Manager</option>
+																	<option value="site_manager">Site Manager</option>
+																	<option value="planning_manager">Planning Manager</option>
+																	<option value="planning_supervisor">Site Supervisor</option>
+																	<option value="planning_engineer">Site Engineer</option>
+																</select>
+																<div class="invalid-feedback">
+																  Please select Team Size.
+																</div>
+															</div>
+															<div class="form-group">
+																<div class="has-validation w-100">
+																  <div class="form-group">
+																	  <label for="selectState" style="font-weight: 550; color: #000;" >State</label>
+																	  <select class="form-control" id="selectState" name="selectState" required >
+																		<option selected disabled value="">Select Your State</option>
+																		  <option value="Andhra Pradesh">Andhra Pradesh</option>
+																		  <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+																		  <option value="Assam">Assam</option>
+																		  <option value="Bihar">Bihar</option>
+																		  <option value="Chhattisgarh">Chhattisgarh</option>
+																		  <option value="Goa">Goa</option>
+																		  <option value="Gujarat">Gujarat</option>
+																		  <option value="Haryana">Haryana</option>
+																		  <option value="Himachal Pradesh">Himachal Pradesh</option>
+																		  <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+																		  <option value="Jharkhand">Jharkhand</option>
+																		  <option value="Karnataka">Karnataka</option>
+																		  <option value="Kerala">Kerala</option>
+																		  <option value="Madhya Pradesh">Madhya Pradesh</option>
+																		  <option value="Maharashtra">Maharashtra</option>
+																		  <option value="Manipur">Manipur</option>
+																		  <option value="Meghalaya">Meghalaya</option>
+																		  <option value="Mizoram">Mizoram</option>
+																		  <option value="Nagaland">Nagaland</option>
+																		  <option value="Orissa">Orissa</option>
+																		  <option value="Punjab">Punjab</option>
+																		  <option value="Rajasthan">Rajasthan</option>
+																		  <option value="Sikkim">Sikkim</option>
+																		  <option value="Tamil Nadu">Tamil Nadu</option>
+																		  <option value="Tripura">Tripura</option>
+																		  <option value="Uttarakhand">Uttarakhand</option>
+																		  <option value="Uttar Pradesh">Uttar Pradesh</option>
+																		  <option value="West Bengal">West Bengal</option>
+																		  <option value="Tamil Nadu">Tamil Nadu</option>
+																		  <option value="Tripura">Tripura</option>
+																		  <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+																		  <option value="Chandigarh">Chandigarh</option>
+																		  <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+																		  <option value="Daman and Diu">Daman and Diu</option>
+																		  <option value="Delhi">Delhi</option>
+																		  <option value="Lakshadweep">Lakshadweep</option>
+																		  <option value="Pondicherry">Pondicherry</option>
+																	  </select>
+																	  <div class="invalid-feedback">
+																		  please select you Designation
+																	  </div>
+																  </div>
+																</div>
+															</div>
+															<div class="form-group d-flex justify-content-center">
+																<button type="submit" style="color: #fff; background-color: #3650A2; font-size: 1.2rem;" class="btn" >Submit</button>
+															</div>
+													  	</form>
 													</div>
-												</div>
-
-												<!-- COMPANY NAME -->
-												<div class="col-md-6">
-													<div class="form-group">
-														<label class="label" for="yourName">Company Name</label>
-														<input type="text" class="form-control" required name="companyName" id="companyName" placeholder="Company Name">
-														<div class="invalid-feedback">
-															Please enter your comapnay name
-														</div>
-													</div>
-												</div>
-
-												<!-- PHONE NUMBER -->
-												<div class="col-md-6">
-													<div class="form-group">
-														<label class="label" for="phoneNumber">Phone Number</label>
-														<input type="tel" class="form-control" required name="phoneNumber" id="phoneNumber" placeholder="+91 123457890">
-														<div class="invalid-feedback">
-															Please enter your phone number
-														</div>
-													</div>
-												</div>
-
-												<!-- TEAM SIZE -->
-												<div class="col-md-6">
-													<div class="form-group">
-														<label for="teamSize" class="label">Team Size:</label>
-														<select class="form-control" id="teamSize" name="teamSize" required>
-														  <option selected disabled value="">Select Team Size</option>
-														  <option value="1-5">1 - 5</option>
-														  <option value="5-10">5 - 10</option>
-														  <option value="10-25">10 - 25</option>
-														  <option value="25-50">25 - 50</option>
-														  <option value="50+">50+</option>
-														</select>
-														<div class="invalid-feedback">
-														  Please select Team Size.
-														</div>
-													</div>
-												</div>
-
-
-												<div class="col-md-6">
-													<div class="form-group">
-														<label for="yourDesignation" class="label">Your Designation:</label>
-														<select class="form-control" id="yourDesignation" name="yourDesignation" required>
-															<option selected disabled value="">Select Designation</option>
-															<option value="Founder/Proprietor">Founder / Proprietor</option>
-															<option value="project_manager">Project Manager</option>
-															<option value="site_manager">Site Manager</option>
-															<option value="planning_manager">Planning Manager</option>
-															<option value="planning_supervisor">Site Supervisor</option>
-															<option value="planning_engineer">Site Engineer</option>
-														</select>
-														<div class="invalid-feedback">
-														  Please select Team Size.
-														</div>
-													</div>
-												</div>
-
-												<!-- YOUR DESIGNATION -->
-												<!-- <div class="col-md-6">
-													<div class="form-group">
-														<label class="label" for="designation"></label>
-														<select class="form-control" id="designation" name="designation" required>
-														 
-														</select>
-														<div class="invalid-feedback">
-														  Please select your Designation.
-														</div>
-													</div>
-												</div> -->
-
-												<!-- STATE SELECTION -->
-												<div class="col-md-6">
-													<div class="form-group">
-														<div class="has-validation w-100">
-														  <div class="form-group">
-															  <label for="selectState">State</label>
-															  <select class="form-control" id="selectState" name="selectState" required >
-																<option selected disabled value="">Select Your State</option>
-																  <option value="Andhra Pradesh">Andhra Pradesh</option>
-																  <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-																  <option value="Assam">Assam</option>
-																  <option value="Bihar">Bihar</option>
-																  <option value="Chhattisgarh">Chhattisgarh</option>
-																  <option value="Goa">Goa</option>
-																  <option value="Gujarat">Gujarat</option>
-																  <option value="Haryana">Haryana</option>
-																  <option value="Himachal Pradesh">Himachal Pradesh</option>
-																  <option value="Jammu and Kashmir">Jammu and Kashmir</option>
-																  <option value="Jharkhand">Jharkhand</option>
-																  <option value="Karnataka">Karnataka</option>
-																  <option value="Kerala">Kerala</option>
-																  <option value="Madhya Pradesh">Madhya Pradesh</option>
-																  <option value="Maharashtra">Maharashtra</option>
-																  <option value="Manipur">Manipur</option>
-																  <option value="Meghalaya">Meghalaya</option>
-																  <option value="Mizoram">Mizoram</option>
-																  <option value="Nagaland">Nagaland</option>
-																  <option value="Orissa">Orissa</option>
-																  <option value="Punjab">Punjab</option>
-																  <option value="Rajasthan">Rajasthan</option>
-																  <option value="Sikkim">Sikkim</option>
-																  <option value="Tamil Nadu">Tamil Nadu</option>
-																  <option value="Tripura">Tripura</option>
-																  <option value="Uttarakhand">Uttarakhand</option>
-																  <option value="Uttar Pradesh">Uttar Pradesh</option>
-																  <option value="West Bengal">West Bengal</option>
-																  <option value="Tamil Nadu">Tamil Nadu</option>
-																  <option value="Tripura">Tripura</option>
-																  <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
-																  <option value="Chandigarh">Chandigarh</option>
-																  <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
-																  <option value="Daman and Diu">Daman and Diu</option>
-																  <option value="Delhi">Delhi</option>
-																  <option value="Lakshadweep">Lakshadweep</option>
-																  <option value="Pondicherry">Pondicherry</option>
-															  </select>
-															  <div class="invalid-feedback">
-																  please select you Designation
-															  </div>
-														  </div>
-														</div>
-													  </div>
-												</div>
-
-												<div class="col-md-12">
-													<div class="form-group">
-														<button type="submit" class="btn" style="background-color: #3650A2; color: white; padding: 4px 15px; font-size: 1.2rem;">
-															Submit
-														</button>
-														<div class="submitting"></div>
-													</div>
-												</div>
+												  </div>
+												
 											</div>
 										</form>
 									</div>
