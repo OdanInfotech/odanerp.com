@@ -15,23 +15,16 @@ let isRequested = false;
 
 const requestDemo = () => {
   isRequested = true;
-  console.log('Request button clicked');
-  console.log('modal open -> ', isRequested)
 };
 
-console.log('modal open -> ', isRequested)
 const closeButton = () => {
-  console.log('modal close button clicked');
   isRequested = true;
   $('#exampleModalCenter').modal('hide');
 }
-console.log('modal open -> ', isRequested)
 if (isRequested === false) {
-  console.log('modal open -> ', isRequested)
   setTimeout(() => {
-    console.log('function call set timeout');
     $('#exampleModalCenter').modal('show');
-  }, 600000000);
+  }, 60000);
 
   isRequested = true;
 }
@@ -57,7 +50,6 @@ $(document).ready(function () {
         formData[this.name] = $(this).val();
       });
 
-    console.log(formData);
   });
 });
 
