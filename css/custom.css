@@ -156,6 +156,41 @@
 .mobile_accordio{
   display: none;
 }
+
+
+.clients {
+  padding: 40px 0;
+}
+
+.clients .swiper {
+  padding: 10px 0;
+}
+
+.clients .swiper-slide img {
+  transition: 0.3s;
+}
+
+.clients .swiper-slide img:hover {
+  transform: scale(1.1);
+}
+
+.clients .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  background-color: #ddd;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--new-blue-color-ERP);
+}
+
 @media screen and (max-width: 576px) {
   .accordion_wrapper {
     flex-direction: column;
@@ -174,4 +209,5 @@
   }
 }
 
-  
+
+
