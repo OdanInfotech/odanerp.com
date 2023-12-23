@@ -31,7 +31,7 @@ if (isRequested === false) {
     setTimeout(() => {
         console.log('function call set timeout');
         $('#exampleModalCenter').modal('show');
-    }, 3000000);
+    }, 60000);
 
     isRequested = true;
 }
