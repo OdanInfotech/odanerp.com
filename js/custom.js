@@ -11,23 +11,7 @@ allIndicator.forEach(item => item.addEventListener('click', () => {
   item.classList.add('active');
 }));
 
-let isRequested = false;
 
-const requestDemo = () => {
-  isRequested = true;
-};
-
-const closeButton = () => {
-  isRequested = true;
-  $('#exampleModalCenter').modal('hide');
-}
-if (isRequested === false) {
-  setTimeout(() => {
-    $('#exampleModalCenter').modal('show');
-  }, 60000);
-
-  isRequested = true;
-}
 
 
 
