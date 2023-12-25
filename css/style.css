@@ -89,10 +89,7 @@ body {
 [tabindex="-1"]:focus {
   outline: 0 !important;
 }
-body img {
-  width: 100%; /* or max-width: 100%; */
-  height: auto;
-}
+
 hr {
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
