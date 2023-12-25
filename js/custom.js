@@ -16,26 +16,26 @@ allIndicator.forEach(item => item.addEventListener('click', () => {
 
 
 // CONTACK FORM JS
-$(document).ready(function () {
-  // Create an object to store the form data
-  var formData = {};
+// $(document).ready(function () {
+//   // Create an object to store the form data
+//   var formData = {};
 
-  $("#designation").on("change", function () {
-    formData[this.name] = $(this).val();
-  });
+//   $("#designation").on("change", function () {
+//     formData[this.name] = $(this).val();
+//   });
 
-  $("#contactForm").submit(function (event) {
-    event.preventDefault();
+//   $("#contactForm").submit(function (event) {
+//     event.preventDefault();
 
-    $(this)
-      .find("input, select")
-      .not("#designation") 
-      .each(function () {
-        formData[this.name] = $(this).val();
-      });
+//     $(this)
+//       .find("input, select")
+//       .not("#designation") 
+//       .each(function () {
+//         formData[this.name] = $(this).val();
+//       });
 
-  });
-});
+//   });
+// });
 
 
 
