@@ -20,6 +20,12 @@
   width: auto;
 }
 
+.for_feture_img_custm{
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
 
 .whatsapp-icon{
     z-index: 99999;
