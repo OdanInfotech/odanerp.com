@@ -72,3 +72,11 @@ document.addEventListener('DOMContentLoaded', function() {
     updateCount();
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var images = document.querySelectorAll('img[loading="lazy"]');
+  images.forEach(function(img) {
+      img.setAttribute('loading', 'eager');
+  });
+});
