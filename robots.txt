@@ -1,3 +1,2 @@
 User-agent: *
 Disallow: 
-x-robots-tag: noindex
