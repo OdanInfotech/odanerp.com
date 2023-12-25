@@ -66,7 +66,7 @@ section {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
-  src: local('Arial, Helvetica, sans-serif'), local('Arial, Helvetica, sans-serif'),
+  src: local('Pacifico'), local('Pacifico'),
     url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2)
       format('woff2');
   font-display: swap; 
