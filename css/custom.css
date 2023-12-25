@@ -15,7 +15,10 @@
 	--grey: #eee;
 	--black: #222;
 }
-
+.log_custom{
+  height: 60px;
+  width: auto;
+}
 
 
 .whatsapp-icon{
