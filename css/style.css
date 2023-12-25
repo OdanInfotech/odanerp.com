@@ -69,7 +69,7 @@ section {
   src: local('Arial, Helvetica, sans-serif'), local('Arial, Helvetica, sans-serif'),
     url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2)
       format('woff2');
-  font-display: swap; /* Use 'swap' for improved rendering */
+  font-display: swap; 
 }
 
 body {
