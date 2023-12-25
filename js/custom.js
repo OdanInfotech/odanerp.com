@@ -41,14 +41,16 @@ allIndicator.forEach(item => item.addEventListener('click', () => {
 
 
 //   slider
-var swiper = new Swiper('.swiper', {
-  slidesPerView: 'auto',
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
+document.addEventListener('DOMContentLoaded', function () {
+  var swiper = new Swiper('.clients-slider', {
+    slidesPerView: 'auto',
+    spaceBetween: 20, // Adjust as needed
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
 });
-
 
 document.addEventListener('DOMContentLoaded', function() {
   var counters = document.querySelectorAll('.count');
