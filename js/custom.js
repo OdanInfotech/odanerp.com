@@ -11,35 +11,6 @@ allIndicator.forEach(item => item.addEventListener('click', () => {
   item.classList.add('active');
 }));
 
-
-
-
-
-// CONTACK FORM JS
-// $(document).ready(function () {
-//   // Create an object to store the form data
-//   var formData = {};
-
-//   $("#designation").on("change", function () {
-//     formData[this.name] = $(this).val();
-//   });
-
-//   $("#contactForm").submit(function (event) {
-//     event.preventDefault();
-
-//     $(this)
-//       .find("input, select")
-//       .not("#designation") 
-//       .each(function () {
-//         formData[this.name] = $(this).val();
-//       });
-
-//   });
-// });
-
-
-
-
 //   slider
 document.addEventListener('DOMContentLoaded', function () {
   var swiper = new Swiper('.clients-slider', {
@@ -75,10 +46,20 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-
 document.addEventListener("DOMContentLoaded", function() {
   var images = document.querySelectorAll('img[loading="lazy"]');
   images.forEach(function(img) {
       img.setAttribute('loading', 'eager');
   });
 });
+
+
+// CLOUD-FARE CAPTCHA
+window.onloadTurnstileCallback = function () {
+  turstile.render('example-container', {
+    sitekey: '<YOUR_SITE_KEY>',
+    callback: function(token) {
+      console.log(`Challenge Success ${token}`);
+    },
+  });
+};

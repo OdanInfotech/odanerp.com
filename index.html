@@ -1317,7 +1317,7 @@
 															</div>
 
 															<!-- CLOUD FARE CAPTCHA  -->
-															<div style="border: 1px solid red; height: 50px; padding: 10px; margin-bottom: 20px;" class="cf-turnstile" data-sitekey="yourSitekey" data-callback="javascriptCallback"></div>
+															<div id="example-container" style="border: 1px solid red;" class="example-container" data-sitekey="yourSitekey" data-callback="javascriptCallback"></div>
 
 															<div class="form-group d-flex justify-content-center">
 																<button type="submit" style="color: #fff; background-color: #3650A2; font-size: 1.2rem;" class="btn" >Submit</button>
@@ -1526,15 +1526,5 @@
 
 	<!-- cloud fare cdn -->
 	<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"></script>
-	<script>
-		window.onloadTurnstileCallback = function () {
-			turnstile.render('#example-container', {
-				sitekey: '<YOUR_SITE_KEY>',
-				callback: function(token) {
-					console.log(`Challenge Success ${token}`);
-				},
-			});
-		};	
-	</script>
 </body>
 </html>
