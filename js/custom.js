@@ -54,9 +54,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-window.onloadTurnstileCallback = function () {
+
+window.onloadTurnstileCallback = () => {
   turnstile.render('#example-container', {
-    sitekey: '0x4AAAAAAAPX1eizChl4Pzpz',
+    sitekey: '0x4AAAAAAAPX1eizChl4Pzpz',  
     callback: function (token) {
       console.log(`Challenge Success ${token}`);
     },
