@@ -23,12 +23,12 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   var counters = document.querySelectorAll('.count');
   var speed = 200; // adjust the speed of counting
 
-  counters.forEach(function(counter) {
-    var updateCount = function() {
+  counters.forEach(function (counter) {
+    var updateCount = function () {
       var target = +counter.getAttribute('data-target');
       var count = +counter.innerText;
 
@@ -46,19 +46,18 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   var images = document.querySelectorAll('img[loading="lazy"]');
-  images.forEach(function(img) {
-      img.setAttribute('loading', 'eager');
+  images.forEach(function (img) {
+    img.setAttribute('loading', 'eager');
   });
 });
 
 
-// CLOUD-FARE CAPTCHA
 window.onloadTurnstileCallback = function () {
-  turstile.render('example-container', {
-    sitekey: '<YOUR_SITE_KEY>',
-    callback: function(token) {
+  turnstile.render('#example-container', {
+    sitekey: '0x4AAAAAAAPX1eizChl4Pzpz',
+    callback: function (token) {
       console.log(`Challenge Success ${token}`);
     },
   });
